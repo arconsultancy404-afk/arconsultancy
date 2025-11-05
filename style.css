@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.mobile-menu {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.mobile-menu.show {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+/* Navbar improvements */
+nav {
+  height: auto;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+nav img {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Hover glow for links */
+nav a:hover {
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* Mobile menu smooth transition */
+.mobile-menu {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+}
+.mobile-menu.show {
+  transform: scaleY(1);
+  opacity: 1;
+}
+/* Compact Navbar */
+nav {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: auto;
+}
+
+nav img {
+  height: 3.5rem; /* Adjust height here to match logo */
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Center items vertically */
+nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Keep glass style subtle */
+header.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+}
